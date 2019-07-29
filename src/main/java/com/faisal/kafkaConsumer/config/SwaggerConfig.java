@@ -43,12 +43,13 @@ public class SwaggerConfig {
 	
 	private ApiInfo metaInfo() {
 		ApiInfo apiInfo = new ApiInfo(
-				"Kafka Consumer Management",
+				"Kafka Consumer Management",   
 				"Kafka Consumer Management",
 				"1.0.0",
 				"http://google.com",
 				new Contact("Faisal Widyono", "http://www.faisal.com", "fwidyono@gmail.com"),
 				"FaisalTech 2.0",
+				
 				"http://www.google.com/license",
 				Collections.emptyList());
 				

@@ -17,9 +17,8 @@ import lombok.ToString;
 
 @Data
 @EqualsAndHashCode
-@ToString(callSuper = true)
 @Entity
-@Table(name="topic")
+@Table(name="datakafka")
 public class TopicData {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -32,12 +31,5 @@ public class TopicData {
 	@Column(nullable = false)
 	private String data;
 	
-	@Column(name = "created_at")
-	@Temporal(TemporalType.DATE)
-	private Date createdAt;
-	
-	@Column(name = "modified_at")
-	@Temporal(TemporalType.DATE)
-	private Date modifiedAt;
 
 }
